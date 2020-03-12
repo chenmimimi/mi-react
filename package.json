@@ -1,0 +1,21 @@
+{
+  "name": "mi-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chenmimimi/mi-react.git",
+  "author": "chenmi",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "React.createElement"
+        }
+      ]
+    ]
+  }
+}
