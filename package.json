@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/chenmimimi/mi-react.git",
-  "author": "chenmi",
+  "author": "chenmimimi <soulme.chen@outlook.com>",
   "license": "MIT",
   "babel": {
     "presets": [
