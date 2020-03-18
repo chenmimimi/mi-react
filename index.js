@@ -1,30 +1,7 @@
-import createElement from "./createElement";
+import React from "./react";
+import ReactDOM from "./react-dom/render";
 
-const React = {
-  createElement
-}
-
-const element = (
-  <div>
-      hello<span>world!</span>
-  </div>
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root')
 );
-
-// const element = (
-//   <div className="title">
-//     hello<span>world</span>
-//   </div>
-// )
-// babel将其转换成如下代码
-// const element = React.createElement(
-//   'div',
-//   { className: 'title' },
-//   'hello',
-//   React.createElement(
-//     'span',
-//     {},
-//     'world'
-//   ),
-// )
-
-console.log( element );
