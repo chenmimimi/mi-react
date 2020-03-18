@@ -13,4 +13,4 @@ function _render( vnode, container ) {
   return container.appendChild( dom );    // 将渲染结果挂载到真正的DOM上
 }
 
-export {_render};
+export { _render };
