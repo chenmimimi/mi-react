@@ -1,3 +1,5 @@
+import setAttribute from '../utils/setAttribute';
+
 function _render( vnode, container ) {
     
   // 当vnode为字符串时，渲染结果是一段文本
@@ -7,6 +9,13 @@ function _render( vnode, container ) {
   }
 
   const dom = document.createElement( vnode.tag );
+
+  if ( vnode.attrs ) {
+    Object.keys( vnode.attrs ).forEach( key => {
+        const value = vnode.attrs[ key ];
+         setAttribute( dom, key, value );    // 设置属性
+    } );
+  }
 
   vnode.children.forEach( child => _render( child, dom ) );    // 递归渲染子节点
 
